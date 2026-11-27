@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>光熱費データのご協力｜家計画</title>
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="家計画で建てていただいたOB様へ。過去2年以内の1年分の光熱費（電気・ガス・灯油・水道）をお寄せください。ご協力いただいた方に謝礼をお渡しします。">
+<meta name="description" content="家計画で建てていただいたOB様へ。2025年6月以降の1年分の光熱費（電気・ガス・灯油・水道）をお寄せください。ご協力いただいた方に謝礼をお渡しします。">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="株式会社 家計画">
 <meta property="og:title" content="光熱費データのご協力｜家計画">
-<meta property="og:description" content="家計画で建てていただいたOB様へ。過去2年以内の1年分の光熱費（電気・ガス・灯油・水道）をお寄せください。ご協力いただいた方に謝礼をお渡しします。">
+<meta property="og:description" content="家計画で建てていただいたOB様へ。2025年6月以降の1年分の光熱費（電気・ガス・灯油・水道）をお寄せください。ご協力いただいた方に謝礼をお渡しします。">
 <meta property="og:url" content="https://iekeikaku.github.io/kounetsu/">
 <meta property="og:image" content="https://iekeikaku.github.io/kounetsu/ogp.jpg">
 <meta property="og:image:width" content="1200">
@@ -169,7 +169,7 @@ footer a{color:var(--lamp);font-weight:700;font-size:20px;text-decoration:none}
     <p class="n">データをいただいた日から2週間以内に、担当営業よりお渡しします。</p>
   </div>
   <dl class="info">
-    <div><dt>対象</dt><dd>過去2年以内の、連続した12ヶ月分</dd></div>
+    <div><dt>対象</dt><dd>2025年6月以降の、連続した12ヶ月分</dd></div>
     <div><dt>内容</dt><dd>電気代・ガス代・灯油代・水道代</dd></div>
     <div><dt>締切</dt><dd>12月11日（金）</dd></div>
   </dl>
@@ -226,7 +226,7 @@ footer a{color:var(--lamp);font-weight:700;font-size:20px;text-decoration:none}
 
 <section class="px" style="padding-top:40px">
   <h2>よくあるご質問</h2>
-  <details style="margin-top:6px"><summary>どの期間の12ヶ月を選べばいいですか？</summary><p>過去2年以内で、金額がわかる連続した12ヶ月を選んでください。いちばん新しい12ヶ月がおすすめです。</p></details>
+  <details style="margin-top:6px"><summary>どの期間の12ヶ月を選べばいいですか？</summary><p>2025年6月以降で、金額がわかる連続した12ヶ月を選んでください。いちばん新しい12ヶ月がおすすめです。</p></details>
   <details><summary>灯油はいつの月に入れればいいですか？</summary><p>代金を支払った月に、その月に支払った金額を入力してください。配達のたびに払っている場合は、その月の合計で大丈夫です。</p></details>
   <details><summary>水道代は2ヶ月に1回の請求です</summary><p>2ヶ月分まとめての金額で大丈夫です。請求のあった月に入力してください。</p></details>
   <details><summary>LINEで送るがうまく動きません</summary><p>「入力内容をコピー」を押して、担当営業のトークに貼り付けてください。</p></details>
@@ -259,7 +259,7 @@ const ym=(y,m)=>y*12+m;               // month index
 const lab=i=>Math.floor(i/12)+'年'+(i%12+1)+'月';
 const now=new Date();
 const latestEnd=ym(now.getFullYear(),now.getMonth())-1;   // last month
-const earliestStart=ym(now.getFullYear(),now.getMonth())-24; // 2 years ago
+const earliestStart=ym(2025,5); // 2025年6月から
 const latestStart=latestEnd-11;
 let state={start:latestStart,tab:'e',vals:{}};
 try{const s=JSON.parse(localStorage.getItem('ob-kounetsu-v2')||'null');if(s&&s.vals){state=Object.assign(state,s);}}catch(e){}
