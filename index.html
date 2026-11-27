@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>光熱費データのご協力｜家計画</title>
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="家計画で建てていただいたOB様へ。過去2年以内の1年分の光熱費（電気・ガス・水道）をお寄せください。ご協力いただいた方に謝礼をお渡しします。">
+<meta name="description" content="家計画で建てていただいたOB様へ。過去2年以内の1年分の光熱費（電気・ガス・灯油・水道）をお寄せください。ご協力いただいた方に謝礼をお渡しします。">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="株式会社 家計画">
 <meta property="og:title" content="光熱費データのご協力｜家計画">
-<meta property="og:description" content="家計画で建てていただいたOB様へ。過去2年以内の1年分の光熱費（電気・ガス・水道）をお寄せください。ご協力いただいた方に謝礼をお渡しします。">
+<meta property="og:description" content="家計画で建てていただいたOB様へ。過去2年以内の1年分の光熱費（電気・ガス・灯油・水道）をお寄せください。ご協力いただいた方に謝礼をお渡しします。">
 <meta property="og:url" content="https://iekeikaku.github.io/kounetsu/">
 <meta property="og:image" content="https://iekeikaku.github.io/kounetsu/ogp.jpg">
 <meta property="og:image:width" content="1200">
@@ -80,11 +80,11 @@ section{scroll-margin-top:12px}
 .selwrap select{width:100%;height:56px;padding:0 44px 0 14px;font-family:inherit;font-size:18px;font-weight:700;color:var(--ink);border:1.5px solid var(--night);border-radius:6px;background:#FFFFFF;appearance:none;-webkit-appearance:none}
 .selwrap::after{content:"";position:absolute;right:18px;top:50%;width:9px;height:9px;border-right:2px solid var(--night);border-bottom:2px solid var(--night);transform:translateY(-70%) rotate(45deg);pointer-events:none}
 .period{margin-top:8px;font-size:14px;color:var(--sub)}
-.tabs{margin:12px 20px 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1.5px solid var(--night);border-radius:6px;overflow:hidden}
+.tabs{margin:12px 20px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1.5px solid var(--night);border-radius:6px;overflow:hidden}
 .tabs button{min-height:56px;border:0;font-family:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.3;padding:6px 0;background:#FFFFFF;color:var(--night)}
 .tabs button+button{border-left:1.5px solid var(--night)}
 .tabs button[aria-selected=true]{background:var(--night);color:#FFFFFF}
-.tabs .t{font-size:16px;font-weight:700}
+.tabs .t{font-size:15px;font-weight:700;white-space:nowrap}
 .tabs .c{font-size:12px}
 .hint{margin:12px 20px 0;font-size:14px;color:var(--sub)}
 .rows{margin-top:8px}
@@ -170,7 +170,7 @@ footer a{color:var(--lamp);font-weight:700;font-size:20px;text-decoration:none}
   </div>
   <dl class="info">
     <div><dt>対象</dt><dd>過去2年以内の、連続した12ヶ月分</dd></div>
-    <div><dt>内容</dt><dd>電気代・ガス代・水道代</dd></div>
+    <div><dt>内容</dt><dd>電気代・ガス代・灯油代・水道代</dd></div>
     <div><dt>締切</dt><dd>12月11日（金）</dd></div>
   </dl>
 </section>
@@ -183,7 +183,7 @@ footer a{color:var(--lamp);font-weight:700;font-size:20px;text-decoration:none}
 <section id="input" style="padding-top:44px">
   <div class="px">
     <h2>金額を入力する</h2>
-    <p style="margin-top:8px;font-size:15px">請求金額を、<b>数字だけ</b>で入れてください。使っていないもの・請求のない月は空欄のままで大丈夫です。</p>
+    <p style="margin-top:8px;font-size:15px">請求・支払いの金額を、<b>数字だけ</b>で入れてください。使っていないもの・請求のない月は空欄のままで大丈夫です。</p>
     <p class="step"><em>1</em>入力する12ヶ月を選ぶ</p>
     <div class="selwrap">
       <label for="start" style="position:absolute;left:-9999px">最初の月</label>
@@ -227,6 +227,7 @@ footer a{color:var(--lamp);font-weight:700;font-size:20px;text-decoration:none}
 <section class="px" style="padding-top:40px">
   <h2>よくあるご質問</h2>
   <details style="margin-top:6px"><summary>どの期間の12ヶ月を選べばいいですか？</summary><p>過去2年以内で、金額がわかる連続した12ヶ月を選んでください。いちばん新しい12ヶ月がおすすめです。</p></details>
+  <details><summary>灯油はいつの月に入れればいいですか？</summary><p>代金を支払った月に、その月に支払った金額を入力してください。配達のたびに払っている場合は、その月の合計で大丈夫です。</p></details>
   <details><summary>水道代は2ヶ月に1回の請求です</summary><p>2ヶ月分まとめての金額で大丈夫です。請求のあった月に入力してください。</p></details>
   <details><summary>LINEで送るがうまく動きません</summary><p>「入力内容をコピー」を押して、担当営業のトークに貼り付けてください。</p></details>
   <details><summary>担当営業のLINEがわかりません</summary><p>家計画（電話 0166-26-2488）にお電話ください。担当からご連絡します。</p></details>
@@ -251,8 +252,8 @@ footer a{color:var(--lamp);font-weight:700;font-size:20px;text-decoration:none}
 
 <script>
 (function(){
-const U=[['e','電気'],['g','ガス'],['w','水道']];
-const HINT={e:'電力会社の明細やアプリを見ながら入力してください。',g:'ガスを使っていない場合は、空欄のまま「水道」へ進んでください。',w:'2ヶ月ごとの請求の場合は、請求のあった月に2ヶ月分の金額を入力してください。'};
+const U=[['e','電気'],['g','ガス'],['k','灯油'],['w','水道']];
+const HINT={e:'電力会社の明細やアプリを見ながら入力してください。',g:'ガスを使っていない場合は、空欄のまま「灯油」へ進んでください。',k:'灯油は、代金を支払った月に、その月に支払った金額を入力してください。使っていない場合は空欄のまま「水道」へ進んでください。',w:'2ヶ月ごとの請求の場合は、請求のあった月に2ヶ月分の金額を入力してください。'};
 const $=id=>document.getElementById(id);
 const ym=(y,m)=>y*12+m;               // month index
 const lab=i=>Math.floor(i/12)+'年'+(i%12+1)+'月';
@@ -305,16 +306,16 @@ function render(){
   const name=U.find(u=>u[0]===state.tab)[1],idx=U.findIndex(u=>u[0]===state.tab);
   [...$('tabs').children].forEach(b=>{b.setAttribute('aria-selected',b.dataset.k===state.tab);b.lastChild.textContent=count(b.dataset.k)+' / 12';});
   const xs=months().map(m=>Number(state.vals[key(m,state.tab)]||0)).filter(x=>x>0).sort((a,b)=>a-b);
-  const med=xs.length>=3?xs[Math.floor(xs.length/2)]:0;let warn=false;
+  const med=(state.tab!=='k'&&xs.length>=3)?xs[Math.floor(xs.length/2)]:0;let warn=false;
   $('rows').querySelectorAll('input').forEach(inp=>{const n=Number(state.vals[key(+inp.dataset.m,state.tab)]||0);const w=n>0&&med>0&&(n>med*5||n*5<med);if(w)warn=true;inp.classList.toggle('warn',w);});
   $('warn').hidden=!warn;$('hint').textContent=HINT[state.tab];$('tabName').textContent=name;
   $('tabTotal').textContent=total(state.tab)?yen(total(state.tab))+'円':'―';
   $('period').textContent='入力する期間：'+periodText();
-  $('next').textContent=idx<2?'次へ：'+U[idx+1][1]+'を入力':'確認して送るへ';
+  $('next').textContent=idx<U.length-1?'次へ：'+U[idx+1][1]+'を入力':'確認して送るへ';
   const t=text();$('preview').textContent=t;$('lineBtn').href='https://line.me/R/share?text='+encodeURIComponent(t);
 }
 $('next').addEventListener('click',()=>{const idx=U.findIndex(u=>u[0]===state.tab);
-  if(idx<2){state.tab=U[idx+1][0];save();fillInputs();render();$('tabs').scrollIntoView({block:'start'});}else{$('send').scrollIntoView({block:'start'});}});
+  if(idx<U.length-1){state.tab=U[idx+1][0];save();fillInputs();render();$('tabs').scrollIntoView({block:'start'});}else{$('send').scrollIntoView({block:'start'});}});
 $('copy').addEventListener('click',()=>{const b=$('copy');const done=ok=>{b.textContent=ok?'コピーしました':'コピーできませんでした。上の内容を長押しで選択してください';setTimeout(()=>{b.textContent='入力内容をコピー'},3000)};
   try{navigator.clipboard.writeText(text()).then(()=>done(true),()=>done(false));}catch(e){done(false);}});
 buildRows();render();
