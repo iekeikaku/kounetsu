@@ -319,6 +319,7 @@ $('next').addEventListener('click',()=>{const idx=U.findIndex(u=>u[0]===state.ta
 $('copy').addEventListener('click',()=>{const b=$('copy');const done=ok=>{b.textContent=ok?'コピーしました':'コピーできませんでした。上の内容を長押しで選択してください';setTimeout(()=>{b.textContent='入力内容をコピー'},3000)};
   try{navigator.clipboard.writeText(text()).then(()=>done(true),()=>done(false));}catch(e){done(false);}});
 buildRows();render();
+window.addEventListener('pageshow',e=>{if(e.persisted){location.reload();}});
 })();
 </script>
 </body>
