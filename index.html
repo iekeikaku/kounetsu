@@ -262,9 +262,9 @@ const latestEnd=ym(now.getFullYear(),now.getMonth())-1;   // last month
 const earliestStart=ym(2025,5); // 2025年6月から
 const latestStart=latestEnd-11;
 let state={start:latestStart,tab:'e',vals:{}};
-try{const s=JSON.parse(localStorage.getItem('ob-kounetsu-v2')||'null');if(s&&s.vals){state=Object.assign(state,s);}}catch(e){}
+try{localStorage.removeItem('ob-kounetsu-v2');localStorage.removeItem('ob-kounetsu');}catch(e){}
 if(state.start<earliestStart||state.start>latestStart)state.start=latestStart;
-const save=()=>{try{localStorage.setItem('ob-kounetsu-v2',JSON.stringify(state))}catch(e){}};
+const save=()=>{};
 const months=()=>Array.from({length:12},(_,i)=>state.start+i);
 const yen=n=>Number(n).toLocaleString('ja-JP');
 const norm=s=>String(s).replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-0xFEE0)).replace(/[^0-9]/g,'').slice(0,7);
